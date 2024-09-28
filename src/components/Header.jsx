@@ -1,4 +1,6 @@
 import React from 'react'
+import { CgProfile } from "react-icons/cg";
+
 
 const Header = () => {
   return (
@@ -18,9 +20,9 @@ const Header = () => {
             Connect Wallet
           </div>
         </button>
-        <button className="inline-flex h-12 animate-shimmer mr-6 items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-            Profile Badge
-        </button>
+        <div className='h-14 w-14 bg-white rounded-full	mr-12 flex items-center justify-center'>
+         <CgProfile className='text-6xl'/>
+        </div>
         
     </div>
   )
