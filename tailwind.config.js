@@ -30,7 +30,11 @@ module.exports = {
         'large': '10rem',
       },
       spacing: {
-        '15p': '15%', // Create a new spacing value for 15%
+        '8p': '8%', // Create a new spacing value for 15%
+        '12p': '12%',
+      },
+      colors: {
+        'valograde': '#FF0000',
       },
       keyframes: {
         "accordion-down": {
@@ -49,11 +53,20 @@ module.exports = {
             backgroundPosition: "350% 50%, 350% 50%",
           },
         },
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         aurora: "aurora 60s linear infinite",
+        shimmer: "shimmer 2s linear infinite", // Added shimmer animation
       },
     },
   },
