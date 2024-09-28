@@ -11,4 +11,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+  font-family: 'Ash'; /* Change this to a name of your choice */
+  src: url('./fonts/Ash.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 }

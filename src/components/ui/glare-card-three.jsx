@@ -1,7 +1,7 @@
 import { cn } from "../../lib/utils";
 import { useRef } from "react";
 
-export const GlareCard = ({
+export const GlareCardThree = ({
   children,
   className
 }) => {
@@ -65,7 +65,7 @@ export const GlareCard = ({
   return (
     <div
       style={containerStyle}
-      className="relative isolate [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform w-[250px] h-[180px]" // Increased width and decreased height
+      className="relative isolate [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform w-[250px] h-[120px]" // Increased width and decreased height
       ref={refElement}
       onPointerMove={(event) => {
         const rotateFactor = 0.4;

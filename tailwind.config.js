@@ -25,6 +25,7 @@ module.exports = {
     extend: {
       fontFamily: {
         valo: 'Valorant',
+        ash: 'Ash',
       },
       fontSize: {
         'large': '10rem',
@@ -35,6 +36,9 @@ module.exports = {
       },
       colors: {
         'valograde': '#FF0000',
+      },
+      inset: {
+        '94px': '94px',
       },
       keyframes: {
         "accordion-down": {

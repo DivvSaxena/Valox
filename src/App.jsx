@@ -5,6 +5,11 @@ import Header from './components/Header';
 import symbol from './assets/symbol-bg.svg';
 import { GlareCard } from './components/ui/glare-card';
 import btn from './assets/button-bg.png';
+import gunone from './assets/Kuronami_Vandal.png'
+import { GlareCardTwo } from './components/ui/glare-card-two';
+import { GlareCardThree } from './components/ui/glare-card-three';
+import guntwo from './assets/Glitchpop_Operator.png'
+import gunthree from './assets/Prime_Axe.png'
 
 const App = () => {
   return (
@@ -31,23 +36,31 @@ const App = () => {
       </div>
 
       {/* Glare Card - Positioned on top */}
-      <div className="absolute bottom-10 right-0 transform -translate-x-1/2 z-20">
-        <GlareCard className='flex items-center justify-center'>
-          <h1 className='text-2xl text-white font-valo text-center'>Level up your collection! Dive into the ultimate Valorant NFT marketplace and unleash your inner agent</h1>
-        </GlareCard>
+      <div className="absolute bottom-80 right-52 transform -translate-x-1/2 z-30 w-52">
+          <GlareCard className="flex justify-center p-4 flex-col items-start">
+            <img src={gunthree} alt="gun" className='mb-8 pl-4 w-60' />
+            <p className='text-white font-ash absolute bottom-0 left-7 w-1/2'>#19 <b className='text-sm mb-2'>Prime Axe</b></p>
+          </GlareCard>
       </div>
 
       {/* Glare Card - Positioned on top */}
-      <div className="absolute bottom-10 left-72 transform -translate-x-1/2 z-20">
-        <GlareCard className="flex items-center justify-center p-4">
-          <h1 className="text-2xl text-white font-valo text-center">
-            Level up your collection! Dive into the ultimate Valorant NFT marketplace and unleash your inner agent
-          </h1>
-        </GlareCard>
+      <div className="absolute bottom-24 left-72 transform -translate-x-1/2 z-30 w-52">
+        <GlareCardTwo className="flex justify-center p-4 flex-col items-start">
+          <img src={gunone} alt="gun" className='mb-4' />
+          <p className='text-white font-ash'>#29 <b className='text-md'>Kuronami Vandal</b></p>
+        </GlareCardTwo>
       </div>
 
+      <div className="absolute top-52 left-96 transform -translate-x-1/2 z-30 w-52">
+        <GlareCardThree className="flex justify-center p-4 flex-col items-start">
+          <img src={guntwo} alt="gun" className='mb-4' />
+          <p className='text-white font-ash text-xs'>#03 Glitchpop Operator</p>
+        </GlareCardThree>
+      </div>
+      
+
       {/* Join Now Button - Centered on the page */}
-      <div className="absolute inset-0 flex items-center justify-center z-30 mt-12 cursor-pointer">
+      <div className="absolute inset-0 flex items-center justify-center z-20 mt-12 cursor-pointer">
         <div className="relative flex items-center justify-center w-64">
           <img src={btn} alt="btn" className="absolute inset-0 w-96 h-14 object-cover opacity-50" />
           <div className="relative z-10 text-white text-xl font-bold w-full flex items-center justify-center h-14 font-valo">
