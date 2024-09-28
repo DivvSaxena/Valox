@@ -26,6 +26,7 @@ module.exports = {
       fontFamily: {
         valo: 'Valorant',
         ash: 'Ash',
+        alata: 'Alata',
       },
       fontSize: {
         'large': '10rem',

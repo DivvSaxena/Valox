@@ -18,6 +18,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Alata'; /* Change this to a name of your choice */
+  src: url('./fonts/Alata-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 }
 
 .no-visible-scrollbar {

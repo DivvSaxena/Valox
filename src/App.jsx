@@ -10,6 +10,8 @@ import { GlareCardTwo } from './components/ui/glare-card-two';
 import { GlareCardThree } from './components/ui/glare-card-three';
 import guntwo from './assets/Glitchpop_Operator.png'
 import gunthree from './assets/Prime_Axe.png'
+import { Link } from "react-router-dom"
+
 
 const App = () => {
   return (
@@ -63,9 +65,8 @@ const App = () => {
       <div className="absolute inset-0 flex items-center justify-center z-20 mt-12 cursor-pointer">
         <div className="relative flex items-center justify-center w-64">
           <img src={btn} alt="btn" className="absolute inset-0 w-96 h-14 object-cover opacity-50" />
-          <div className="relative z-10 text-white text-xl font-bold w-full flex items-center justify-center h-14 font-valo">
-            Join Now
-          </div>
+          <Link to='/nft-marketplace' className="relative z-10 text-white text-xl font-bold w-full flex items-center justify-center h-14 font-valo">Join Now</Link>
+         
         </div>
       </div>
       
