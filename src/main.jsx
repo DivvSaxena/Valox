@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import Card from './components/Card.jsx'
+import { TabsDemo } from './components/TabsDemo.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,5 +14,8 @@ createRoot(document.getElementById('root')).render(
     <h1>Helo</h1>
 
     <Card />
+
+    <TabsDemo />
+
   </StrictMode>,
 )
