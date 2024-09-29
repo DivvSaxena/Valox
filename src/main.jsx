@@ -6,6 +6,7 @@ import Card from './components/Card.jsx'
 import { TabsDemo } from './components/TabsDemo.jsx'
 import Footer from './components/Footer.jsx'
 import { BrowserRouter , Routes , Route } from 'react-router-dom'
+import NftMarketplace from './components/NftMarketplace.jsx'
 
 
 const Final = () => {
@@ -25,7 +26,7 @@ createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Final />} />
-      <Route path="/about" element={<h1>Hello</h1>} />
+      <Route path="/nftmarketplace" element={<NftMarketplace />} />
     </Routes>
   </BrowserRouter>,
 )
